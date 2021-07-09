@@ -12,4 +12,8 @@ class Userpremium extends User {
         $this->special_card = $special_card;
 
     }
+
+    public function getCard() {
+        return $this->special_card;
+    }
 }
