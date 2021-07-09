@@ -31,3 +31,36 @@ $play5 = new Console("Playstation 5", "499", "10", "1", "Sony", "667");
 
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>php-oop-2</title>
+    </head>
+    <body>
+        <div class="username">
+            <h3>UserName: <?= $user_code_premium->getUserName() ?> </h3>
+        </div>
+        <div class="product">
+            <h1>Product:</h1>
+            <h2> 
+               Name: <?= $iphone11->getName(); ?> 
+            </h2>
+            <p>
+                Price: <?= $iphone11->getPrice() . " €"; ?>
+            </p>
+            <p>
+                Discount: <?= $iphone11->getDiscount() . " %"; ?>
+            </p>
+            <p>
+                Quantity: <?= $iphone11->getQuantity() . " Amount"; ?>
+            </p>
+        </div>
+    </body>
+</html>
+
+
+

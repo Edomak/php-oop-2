@@ -13,7 +13,11 @@ class Userpremium extends User {
 
     }
 
-    public function getCard() {
-        return $this->special_card;
+    public function getUserName() {
+        return $this->username;
+    }
+
+    public function getPremiumDiscount() {
+        
     }
 }
