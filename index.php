@@ -12,13 +12,13 @@ Aggiungete una pagina (vista) in cui creare istanze delle classi create e mostra
 require __DIR__ . "/classes/Userpremium.php";
 require __DIR__ . "/classes/Console.php";
 
-$user_code = new User('Edoardo','Maccherini','edoardo.maccherini@hotmail.com','Edomak','edo_85');
+$user_id = new User('Edoardo','Maccherini','edoardo.maccherini@hotmail.com','Edomak','edo_85');
 
-// var_dump($user_code);
+// var_dump($user_id);
 
-$user_code_premium = new UserPremium('Luca','Tassi','luca.tassi@hotmail.com','Lucataxy','luca_84','Lucataxy54321');
+$user_id_premium = new UserPremium('Luca','Tassi','luca.tassi@hotmail.com','Lucataxy','luca_84','Lucataxy54321');
 
-// var_dump($user_code_premium);
+// var_dump($user_id_premium);
 
 $iphone11 = new Product('Iphone11','699', 20, 1);
 
@@ -42,7 +42,7 @@ $play5 = new Console("Playstation 5", "499", "10", "1", "Sony", "667");
     </head>
     <body>
         <div class="username">
-            <h3>UserName: <?= $user_code_premium->getUserName() ?> </h3>
+            <h3>UserName: <?= $user_id_premium->getUserName() ?> </h3>
         </div>
         <div class="product">
             <h1>Product:</h1>
